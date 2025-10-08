@@ -8,13 +8,6 @@
 # Compilación
 bin/
 obj/
-Debug/
-Release/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-[Bb]uild/
 
 # Archivos de paquetes
 packages/
