@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 360px;
+  padding: 30px;
+  background: linear-gradient(145deg, #1A0949, #2E0B70);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  margin-bottom: 15px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #4CB89F;
+  border-radius: 12px;
+  background-color: #1F1F1F;
+  color: #FFFFFF; /* 🔹 texto blanco */
+}
+
+.login-container input::placeholder {
+  color: #FFFFFF88; /* 🔹 placeholder blanco semi-transparente */
+}
+
+/* 🔹 icono del ojo (si usas un <i> o <svg> dentro del input) */
+.login-container .eye-icon {
+  color: #FFFFFF; 
+}
+
+.login-container button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4CB89F, #1AB394);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-container button:hover {
+  background: linear-gradient(90deg, #1AB394, #4CB89F);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.login-container .mensaje {
+  margin-top: 12px;
+  color: #FF6B6B;
+  text-align: center;
+  font-weight: bold;
+}
+.login-container h2 {
+  color: #FFFFFF; /* título blanco */
+  text-align: center; /* opcional, centrado */
+  margin-bottom: 20px; /* separación con los inputs */
+  font-size: 22px; /* tamaño más cómodo en móvil */
+  font-weight: 600;
+}
