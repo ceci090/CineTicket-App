@@ -1,0 +1,32 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compilación
+bin/
+obj/
+
+# Archivos de paquetes
+packages/
+*.nupkg
+*.snupkg
+
+# Archivos de logs y cache
+*.log
+*.cache
+*.dbmdl
+*.bak
+*.tmp
+
+# Configuración del sistema
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Publicación
+publish/

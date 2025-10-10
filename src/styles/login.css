@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 4vw; /* tamaño relativo al ancho de la pantalla */
+}
+
+.login-container {
+  width: 90vw;       /* ancho relativo al móvil */
+  max-width: 360px;  /* límite para pantallas más grandes */
+  padding: 5vh 5vw;  /* padding relativo al alto y ancho de pantalla */
+  background: linear-gradient(145deg, #1A0949, #2E0B70);
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 3vh; /* separación proporcional */
+  font-size: 6vw;      /* tamaño adaptable al ancho de pantalla */
+  font-weight: 600;
+}
+
+.login-container input {
+  margin-bottom: 3vh;
+  padding: 1.5vh 2vw;
+  font-size: 4vw;        /* texto escalable */
+  border: 1px solid #4CB89F;
+  border-radius: 12px;
+  background-color: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.login-container input::placeholder {
+  color: #FFFFFF88;
+}
+
+.login-container .eye-icon {
+  color: #FFFFFF;
+  font-size: 5vw;       /* icono escalable */
+}
+
+.login-container button {
+  padding: 1.5vh 0;
+  font-size: 4vw;        /* texto escalable */
+  font-weight: bold;
+  background: linear-gradient(90deg, #4CB89F, #1AB394);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 2vh;
+}
+
+.login-container button:hover {
+  background: linear-gradient(90deg, #1AB394, #4CB89F);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.login-container .mensaje {
+  margin-top: 2vh;
+  color: #FF6B6B;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Media query para pantallas más grandes (tablets o PC) */
+@media (min-width: 1080px) {
+  body {
+    font-size: 16px;
+  }
+  .login-container input,
+  .login-container button {
+    font-size: 16px;
+    padding: 14px;
+  }
+  .login-container h2 {
+    font-size: 22px;
+  }
+}
